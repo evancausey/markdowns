@@ -39,7 +39,7 @@ This approach only works if you have no other id_rsa.pub files located in any .s
 Using the Windows File Explorer, right click on any directory name, then click ***“Git GUI Here.”***  
 
 Click on ***“Help.”*** Click the ***“Generate Key”*** button and the “Copy to Clipboard” button, then close the dialog box. 
-![guiHelp](Images/GitGuiHelpRSAKey_gitInstruction.png)
+![guiHelp](GitGuiHelpRSAKey_gitInstruction.png)
 This automatically enters the key in TortoiseGit.
 
 
@@ -48,7 +48,7 @@ This automatically enters the key in TortoiseGit.
 Browse to http://ms-gitlab.ga.com/users/sign_in to sign in to GitLab.  
 
 If you are still signed in, it will tell you so.  Otherwise, a box pops up as shown on the following figure.
- ![gitlabSignIn](Images/Signon_gitInstruction.png)
+ ![gitlabSignIn](Signon_gitInstruction.png)
 Enter your standard user ID and your password that you use every time you log into your windows computer. 
 
 If desired, click ***“Remember me”*** to potentially skip this step next time.
@@ -64,7 +64,7 @@ GitLab website.
 3. Located on the top of the form is a tab labeled ***“help.”***
 4. Left click on help and navigate to ***“Show SSH key.”***
 5. Click on show SSH key and a window will appear on your screen.
-![guiSSHHelp](Images/gitGuiHelpSSH_gitInstruction.PNG)
+![guiSSHHelp](gitGuiHelpSSH_gitInstruction.PNG)
 6. This form will display the current SSH key Git is using to pull and push from the remote repository.
 Note that if this is not the key you created, the form also displays the path of where it is locating the SSH key. Follow this path and set your SSH key accordingly.
 7. Located at the bottom of the form is a button labeled ***“Copy to Clipboard.”*** 
@@ -72,14 +72,14 @@ Note that during the creation of this document we observed that if you skip this
 the key will create a fingerprint when you attempt to add the key to GitLab.
 8. Log onto your GitLab account. 
 9. Locate and click the ***"Profile Settings”*** tab located inside the menu tab on the upper left corner of the browser window.
-In the upper left corner of the browser window, click on the menu icon that looks like this. ![gitlabMenuIcon](Images/MenuIcon_gitInstruction.png) 
+In the upper left corner of the browser window, click on the menu icon that looks like this. ![gitlabMenuIcon](MenuIcon_gitInstruction.png) 
 It will open up as follows.
-![gitlabMenu](Images/MainMenu_gitInstruction.png)
+![gitlabMenu](MainMenu_gitInstruction.png)
 10. Then click on ***“SSH Keys”*** at the top of the new page.
 11. In the textbox labeled ***“key”*** paste the key you just copied into your clipboard from the Git Gui.
 Note that after you complete this step the textbox labeled ***“Title”*** will be automatically filled with the email address at the end of your SSH key. If it doesn’t automatically fill you can enter the name by hand.
 12. After making sure all required fields are filled in, click ***“Add Key”*** and the browser will respond with either success or fail. 
-![sshKeygen](Images/SSHKeyGen_gitInstruction.png)   
+![sshKeygen](SSHKeyGen_gitInstruction.png)   
 13. After making sure all required fields are filled in click ***“Add Key”*** and the browser will respond with either success or fail. 
 Note that if the key was added successfully you will receive an email informing you that a key was added to your account.
 
@@ -159,7 +159,7 @@ Perform the following steps in order to configure TortoiseGit to use the Beyond 
 3. Located on the left side of the form is a list of options.
 4. Navigate to ***“Diff Viewer.”***
 5. Click on diff viewer and a window will appear on your screen.
-![guiBeyond](Images/beyondCompare_gitInstruction.PNG)
+![guiBeyond](beyondCompare_gitInstruction.PNG)
 6. Locate the Diff Viewer TortoiseGitMerge section and switch ***“TortoiseGitMerge”*** to ***“External.”***
 7. Locate the textbox directly below the external radio button and type the path to your local Beyond Compare executable.
 For example, the path could be, ***“C:\Program Files (x86)\Beyond Compare 3\BCompare.exe."***
@@ -192,7 +192,7 @@ Note that SSH is a header for the URL section.
 
 Note that after you click ***”Git Clone”*** the new URL will be automatically filled into the URL textbox.
 
- ![guiClone](Images/TortoiseContextMenuGitClone_gitInstruction.png)  
+ ![guiClone](TortoiseContextMenuGitClone_gitInstruction.png)  
  
 ## Recloning a Repository
 --------------------------
@@ -208,11 +208,11 @@ Also note that if you wish to clone from a particular branch; locate the textbox
 
 Note that depending on your setup, Git may ask you for a password during the cloning process.
 
-![guiCloneBox](Images/GitCloneBox_gitInstruction.png)  
+![guiCloneBox](GitCloneBox_gitInstruction.png)  
 
 ## The file names are decorated with colorful icons to display the checking status of the files.
 
-![gitFilemanger](Images/FileManagerIcons_gitInstruction.png)
+![gitFilemanger](FileManagerIcons_gitInstruction.png)
 
 ## Creating a Branch
 --------------------------
@@ -224,7 +224,7 @@ In order to create a branch, perform the following steps.
 1. First locate the branch master folder in which you would like to create a new branch. For example, the project folder can be update-synthetic-video. 
 2. Right click the folder and navigate to ***TortoiseGit > Create Branch.***
 3. Once you click on ***create branch*** a window will appear. 
-![guiBranch](Images/creatingBranch_gitInstruction.PNG) 
+![guiBranch](creatingBranch_gitInstruction.PNG) 
 4. This window will allow you to name your branch, choose the base of your branch, add your branch onto another branch, add it to a specific tag, or commit. 
 5. Finally, it will ask you for a description of your branch. 
 
@@ -238,7 +238,7 @@ Once you finish, hit okay. TortoiseGit will respond with either success or fail.
 For example, the folder can be ***update-synthetic-video.*** 
 2. Right click the folder and navigate to ***TortoiseGit > Switch/Checkout.***
 3. Once you select ***switch/checkout*** a window will appear.
-![guiCheckOutBranch](Images/checkingOutBranch_gitInstruction.PNG) 
+![guiCheckOutBranch](checkingOutBranch_gitInstruction.PNG) 
 4. Located on this window is a radio button labeled ***"Branch."*** 
 5. Once you select this button a picklist will appear with all available branches for the current project. 
     This form will also give you the option to check out a branch. 
@@ -264,7 +264,7 @@ Perform the following steps in order to add a file.
 For example, the folder can be ***update-synthetic-video.***
 2. Navigate to ***TortoiseGit > Add.***
 3. Click on add and an add window will appear on your screen.
-![guiAdd](Images/addingFile_gitInstruction.PNG) 
+![guiAdd](addingFile_gitInstruction.PNG) 
 4. This form will show all ***"Not Versioned Files"*** and will allow you to choose which files you may add.
 5. Select the files of interest.
 6. Click okay and the files will be added.
@@ -286,7 +286,7 @@ Perform the following steps in order to rename a file.
 For example, the file can be ***"jerk_test5.txt."***
 2. Navigate to ***TortoiseGit > Rename.***
 3. Click on rename and a rename window will appear on your screen.
-![guiRename](Images/rename_gitInstruction.PNG) 
+![guiRename](rename_gitInstruction.PNG) 
 4. This form will display the current name of the file and contain a textbox for entering a new name.
 5. Once a new name has been entered click okay and the file will be renamed.
 
@@ -297,7 +297,7 @@ In order to revert a change on a file, perform the following steps.
 1. First locate the folder containing the file. 
 2. Right click the folder and navigate to ***TortoiseGit > Revert.***
 3. Once you click revert a window will appear. 
-![guiRevert](Images/revertAdd_gitInstruction.PNG) 
+![guiRevert](revertAdd_gitInstruction.PNG) 
 4. This window will allow you to choose which files you wish to revert to the previous state.
 5.  Once you select all the files of interest, hit okay. 
 TortoiseGit will respond with either success or fail. 
@@ -324,7 +324,7 @@ Perform the following steps in order to commit changes to your local repository.
 1. To commit changes to your local repository you must first right click on the folder containing your changed files. 
 For example, the folder can be ***lat-lon-alt-tracker.***
 2. Navigate to ***TortoiseGit > Commit lat-lon-alt-tracker.***
-![guiCommit](Images/commit_gitInstruction.PNG) 
+![guiCommit](commit_gitInstruction.PNG) 
 3. Click on commit and a commit window will appear on your screen.
 4. This form will allow you to pick individual files you wish to commit to your local repository.
 5. Once you select the files of interest, you must then add a comment to the commit.
@@ -343,7 +343,7 @@ In order to do so, perform the following steps.
 1.  First right click on the folder containing your changes.
 2. Navigate to ***TortoiseGit > Push.***
 3. Click on push and a push window will appear on your screen.
-![guiPush](Images/push_gitInstruction.PNG) 
+![guiPush](push_gitInstruction.PNG) 
 4. This form will show your local repository name, remote repository name, and allow you to modify other attributes of your push.
 5. In the destination section make sure remote is filled in with ***"origin."***
 6. Note that ***"push all branches"*** is not checked by default.
@@ -367,7 +367,7 @@ Perform the following steps in order to pull the remote repository.
 For example, the folder can be ***"update-synthetic-video."***
 2. Navigate to ***TortoiseGit > Pull.***
 3. Click on pull and a pull window will appear on your screen.
-![guiPull](Images/pull_gitInstruction.PNG) 
+![guiPull](pull_gitInstruction.PNG) 
 4. This form will display information about what type of pull you are about to perform. 
 5. In this form you can change the location of your pull. By default the system is set to origin.
 
@@ -387,7 +387,7 @@ Once you finish, hit okay. TortoiseGit will respond with either success or fail.
 For example, the folder can be ***update-synthetic-video.*** 
 2. Right click the folder and navigate to ***TortoiseGit > Create Tag.***
 3. Once you click on create tag a tag window will appear.
-![guiTag](Images/tag_gitInstruction.PNG) 
+![guiTag](tag_gitInstruction.PNG) 
 4. This window will allow you to name your tag, choose the base of your tag, and choose other options.
 Note that TortoiseGit's default for base is ***"head"*** and that branch will be automatically filled with your current branch.
 5. It will ask you for a comment describing your tag.
@@ -402,7 +402,7 @@ The following steps describe how to check out or get a list of available tags.
 For example, the folder can be ***update-synthetic-video.*** 
 2. Right click the folder and navigate to ***TortoiseGit > Switch/Checkout.*** 
 3. Once you click switch/checkout a window will appear. 
-![guiCheckOutTag](Images/checkingOutTags_gitInstruction.PNG)
+![guiCheckOutTag](checkingOutTags_gitInstruction.PNG)
 
 4. Located on this window is a radio button labeled ***"tags."***
 5. Once you select this button a picklist will appear with all available tags for the current project.  
@@ -423,7 +423,7 @@ Once you finish, hit okay. TortoiseGit will respond with either success or fail.
 For example, the folder can be ***update-synthetic-video.*** 
 2. Right click the folder and navigate to ***TortoiseGit > Show log.***
 3. Once you click show log a window will appear.
-![guiLog](Images/log_gitInstruction.PNG) 
+![guiLog](log_gitInstruction.PNG) 
 
 This window will display the history of the entire local repository. 
 
@@ -439,7 +439,7 @@ Once you finish, hit okay.
 
 1.  First locate the file you wish to place on the ignore list. Right click the folder and navigate to ***TortoiseGit > Add to ignore list.***
 2.  Once you click on add to ignore list a window will appear. 
-![guiIgnore](Images/ignore_gitInstruction.PNG) 
+![guiIgnore](ignore_gitInstruction.PNG) 
 3. This window will allow you to choose specific options about the file you are planning to ignore or keep as an untracked file. 
 
 Some of these options include ignore item only in this folder, ignore item recursively, and .gitIgnore in repository root.
